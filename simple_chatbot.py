@@ -1,7 +1,7 @@
 import nltk
 from nltk.chat.util import Chat, reflections
 
-# Define pairs of patterns and responses
+# pairs of patterns and responses
 pairs = [
     (r'Hi|Hello|Hey', ['Hello! How can I help you today?', 'Hi there! How can I assist you?']),
     (r'What is your name?', ['I am a chatbot created with NLTK.']),
@@ -11,10 +11,10 @@ pairs = [
     (r'(.*)', ['Sorry, I did not understand that.'])
 ]
 
-# Create a chatbot instance
+# Created a chatbot instance
 chatbot = Chat(pairs, reflections)
 
-# Define a function to interact with the chatbot
+# A function to interact with the chatbot
 def chat_with_bot():
     print("Chatbot: Hi! Type 'quit' to exit.")
     while True:
